@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -19,8 +20,15 @@ public class SuccessServlet extends HttpServlet {
         if (user!=null){
             //设置编码
             response.setContentType("text/html;charset=utf-8");
+
             //输出
             response.getWriter().write("登录成功！"+user.getUsername()+",欢迎您~~");
+
+            HttpSession session = request.getSession();
+            session.setAttribute("user",user);
+            //重定向到success.jsp页面
+            response.sendRedirect(request.getContextPath()+"/success.jsp");
+
         }
     }
 

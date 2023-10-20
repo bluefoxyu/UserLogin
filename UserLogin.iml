@@ -38,5 +38,6 @@
     <orderEntry type="library" name="lib (4)" level="project" />
     <orderEntry type="library" name="servlet-lib" level="project" />
     <orderEntry type="library" name="servlet-lib (2)" level="project" />
+    <orderEntry type="library" name="servlet-lib (3)" level="project" />
   </component>
 </module>
