@@ -33,9 +33,9 @@
         background-color: #f5f5f5;
       }
       .container {
-        max-width: 400px;
+        max-width: 350px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -48,7 +48,7 @@
         width: 100%;
       }
       table td {
-        padding: 10px;
+        padding: 5px;
       }
       input[type="text"],
       input[type="password"],
@@ -77,6 +77,9 @@
       #change:hover {
         text-decoration: underline;
       }
+      #checkCode {
+        margin-bottom: 10px; /* Add some bottom margin to create space */
+      }
       .error {
         color: red;
       }
@@ -103,7 +106,7 @@
       <tr>
         <td>验证码</td>
         <td class="input-container">
-          <input type="text" id="checkCode" name="checkCode" placeholder="Enter the code">
+          <input type="text" id="checkCode" name="checkCode" placeholder="Enter the code" autocomplete="off">
         </td>
       </tr>
       <tr>

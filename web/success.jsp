@@ -4,7 +4,7 @@
     <title>User Profile</title>
     <style>
         body {
-            background-image: url('images/向光者.jpg'); /* 设置背景图片 */
+            background-image: url('images/背景2.png'); /* 设置背景图片 */
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;
@@ -50,9 +50,6 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .welcome-message {
-            font-size: 24px;
-        }
     </style>
 </head>
 <body>
@@ -67,7 +64,7 @@
             <label for="avatar">修改头像:</label>
             <input type="file" id="avatar" name="avatar">
             <br>
-            <button class="save-button" type="submit">保存更改</button>
+<%--            <button class="save-button" type="submit">保存更改</button>--%>
         </form>
     </div>
     <h4>Welcome, <%=request.getSession().getAttribute("user")%>!</h4>
